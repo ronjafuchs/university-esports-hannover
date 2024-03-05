@@ -1,5 +1,5 @@
 import { Component, ViewChild, ViewEncapsulation } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { ActivatedRoute, NavigationEnd, Router, RouterOutlet, UrlTree } from '@angular/router';
 import { RouterModule } from '@angular/router';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatIconModule } from '@angular/material/icon';
@@ -7,7 +7,7 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatMenuModule } from '@angular/material/menu';
 import { BreakpointObserver, Breakpoints } from '@angular/cdk/layout';
 import { Observable } from 'rxjs';
-import { map } from 'rxjs/operators';
+import { filter, map } from 'rxjs/operators';
 import { MatSidenav, MatSidenavModule } from '@angular/material/sidenav';
 import {MatListModule} from '@angular/material/list';
 @Component({
@@ -21,6 +21,8 @@ export class LayoutComponent {
   @ViewChild('sidenav') sidenav!: MatSidenav;
   isShowing: boolean = false;
 
+
+
   toggleSidenav() {
     this.isShowing = !this.isShowing;
   }
@@ -29,5 +31,7 @@ export class LayoutComponent {
     console.log("sidenav toggle");
     this.toggleSidenav();
   }
+
+
 
 }
