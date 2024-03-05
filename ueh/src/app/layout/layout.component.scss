@@ -1,0 +1,91 @@
+@import "./../../styles.scss";
+
+.icon {
+    padding: 0 14px;
+}
+
+.spacer {
+    flex: 1 1 auto;
+}
+
+.mat-toolbar-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mat-toolbar {
+    font-family: "Comfortaa", sans-serif;
+}
+
+.mat-toolbar-row a {
+    margin: 0 10px; /* Adjust this value to space out the buttons */
+    text-decoration: none;
+    position: relative;
+}
+
+.mat-toolbar-row a:hover::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    width: 100%;
+    border-bottom: 2px solid;
+}
+
+.mat-toolbar-row a:hover {
+    text-decoration: none;
+}
+
+.logo {
+    max-width: 50px; /* Adjust this value as needed */
+    height: auto;
+}
+
+.mat-toolbar {
+    background-color: black;
+}
+
+// .menu {
+//     display: none;
+// }
+
+.big-font {
+    font-size: 20px;
+    margin-right: 5rem !important;
+}
+
+.mobile {
+    display: none;
+}
+
+.nav {
+    background: transparent;
+}
+
+@media (max-width: 768px) {
+    .mobile {
+        display: flex;
+    }
+
+    .desktop {
+        display: none;
+    }
+
+    .nav {
+        display: none;
+    }
+    .menu-row {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .menu-row a {
+        margin: 5px;
+    }
+
+    .mat-menu-panel-0 {
+        background-color: black !important;
+        color: white;
+    }
+}

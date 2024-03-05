@@ -11,6 +11,7 @@ export const routes: Routes = [
     { path: 'teams', component: TeamsComponent },
     { path: 'community', component: CommunityComponent },
     { path: 'impressum', component: ImpressumComponent },
+    { path: '', redirectTo: '/home', pathMatch: 'full' }
 
 ];
 
