@@ -9,13 +9,17 @@ import { BreakpointObserver, Breakpoints } from '@angular/cdk/layout';
 import { Observable } from 'rxjs';
 import { filter, map } from 'rxjs/operators';
 import { MatSidenav, MatSidenavModule } from '@angular/material/sidenav';
-import {MatListModule} from '@angular/material/list';
+import { MatListModule } from '@angular/material/list';
+import { HomeComponent } from '../home/home.component';
+import { CommunityComponent } from '../community/community.component';
 @Component({
   selector: 'app-layout',
   standalone: true,
-  imports: [RouterOutlet, RouterModule, MatListModule, MatIconModule, MatSidenavModule, MatToolbarModule, MatButtonModule, MatMenuModule],
+  imports: [RouterOutlet, RouterModule, MatListModule, MatIconModule, 
+    MatSidenavModule, MatToolbarModule, MatButtonModule, 
+    MatMenuModule, HomeComponent, CommunityComponent],
   templateUrl: './layout.component.html',
-  styleUrl: './layout.component.scss', 
+  styleUrl: './layout.component.scss',
 })
 export class LayoutComponent {
   @ViewChild('sidenav') sidenav!: MatSidenav;

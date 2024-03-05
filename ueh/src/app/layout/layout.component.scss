@@ -63,7 +63,7 @@
 }
 
 .nav {
-    margin-bottom: -1rem;
+    /* margin-bottom: -1rem; */
 }
 
 .active-link {
@@ -85,6 +85,12 @@
 .column {
     flex: 1;
     margin: 0 1rem 0 10rem;
+    button {
+        a {
+            color: white;
+            text-decoration: none;
+        }
+    }
 
 }
 
@@ -111,18 +117,6 @@
         height: 60px;
     }
 }
-
-.discord-button {
-    font-size: 30px; /* Adjust the font size as needed */
-    padding: 2rem 30px; /* Adjust the padding as needed */
-    border-radius: 0; /* Remove rounded corners */
-    background-color: #7289da !important; /* Background color */
-    color: white; /* Text color */
-  }
-  
-  .discord-button:hover {
-    background-color: #d0d5e4 !important; /* Hover background color */
-  }
 
 
 

@@ -60,3 +60,33 @@ body {
 .opacity {
   background: rgba(0, 0, 0, 0.74);
 }
+
+h1 {
+  color: rgb(201, 9, 94);
+  font-size: 40px;
+  font-weight: bold;
+}
+
+p {
+  font-size: 20px;
+}
+
+.discord-button {
+  font-size: 20px; /* Adjust the font size as needed */
+  padding: 2rem 30px; /* Adjust the padding as needed */
+  border-radius: 0; /* Remove rounded corners */
+  background-color: rgb(201, 9, 94) !important; /* Background color */
+  color: white; /* Text color */
+}
+
+.discord-button:hover {
+  background-color: rgb(221, 86, 147) !important; /* Hover background color */
+}
+
+button {
+  a {
+      color: white;
+      text-decoration: none;
+  }
+}
+

@@ -1,0 +1,19 @@
+@import "./../../styles.scss";
+
+.container {
+    display: flex; 
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.column {
+    margin-top: 10rem;
+    width: 30%;
+
+}
+
+.spacer-container {
+    margin-top: 3rem;
+    display: flex;
+    justify-content: center;
+}
