@@ -1,4 +1,4 @@
-<mat-toolbar color="primary">
+<mat-toolbar class="head" color="primary">
     <button mat-icon-button aria-label="Toggle Menu" [matMenuTriggerFor]="menu" class="mobile dark-theme">
         <mat-icon>menu</mat-icon>
     </button>
@@ -8,6 +8,10 @@
     <span class="spacer"></span>
     <mat-icon class="icon">language</mat-icon>
 </mat-toolbar>
+
+<div class="banner">
+    <img class="image" src="./../../assets/img/ueh_banner.png">
+</div>
 
 <!-- <mat-sidenav-container >
     <mat-sidenav [opened]="isShowing" #sidenav mode="side">
@@ -34,7 +38,7 @@
     <button mat-menu-item routerLink="impressum">Impressum</button>
   </mat-menu>
 
-<mat-toolbar class="nav" color="primary">
+<mat-toolbar class="nav opacity" color="primary">
     <mat-toolbar-row>
         <a class="big-font" mat-button routerLink="home">Home</a>
         <a class="big-font"mat-button routerLink="teams">Teams</a>
@@ -43,6 +47,26 @@
     </mat-toolbar-row>
 </mat-toolbar>
 
-<div>
+
+
+<div class="content opacity">
     <router-outlet></router-outlet>
 </div>
+
+<footer class="footer opacity">
+    <div class="column">
+      <ul class="social-icons">
+        <li><a href="https://www.instagram.com/university_esports_hannover/?hl=en"><img src="../../assets/img/instagram.webp" alt="Instagram"></a></li>
+      <li><a href="https://www.facebook.com/luhesports/?locale=de_DE"><img src="../../assets/img/facebook.webp" alt="Twitter"></a></li>
+      <li><a href="https://twitter.com/UeHannover"><img src="../../assets/img/x.webp" alt="Instagram"></a></li>
+    </ul>
+    </div>
+    <div class="column">
+      <button mat-flat-button class="discord-button">Join our Discord</button>
+    </div>
+    <div class="column">
+      <h3>Contact Us</h3>
+      <p>Email: </p>
+    </div>
+  </footer>
+  

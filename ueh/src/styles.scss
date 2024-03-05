@@ -1,16 +1,14 @@
 /* You can add global styles to this file, and also import other style files */
-@use '@angular/material' as mat;
+@use "@angular/material" as mat;
 @import "@angular/material/prebuilt-themes/indigo-pink.css";
 
 $my-palette: mat.$indigo-palette;
 @include mat.core();
 
 @font-face {
-  font-family: 'Comfortaa';
-  src: url('./assets/fonts/Comfortaa/Comfortaa-VariableFont_wght.ttf');
+  font-family: "Comfortaa";
+  src: url("./assets/fonts/Comfortaa/Comfortaa-VariableFont_wght.ttf");
 }
-
-
 
 $my-primary: mat.define-palette(mat.$indigo-palette, 500);
 $my-accent: mat.define-palette(mat.$pink-palette, A200, A100, A400);
@@ -18,41 +16,47 @@ $my-accent: mat.define-palette(mat.$pink-palette, A200, A100, A400);
 // The "warn" palette is optional and defaults to red if not specified.
 $my-warn: mat.define-palette(mat.$red-palette);
 
-html, body { height: 100%; }
+html,
+body {
+  height: 100%;
+}
 
-
-
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}
 :root {
-    --background-color: #000000;
-    --text-color: #ffffff;
-  }
-  
-  body {
-    background-color: var(--background-color);
-    color: var(--text-color);
-  }
-  
+  --background-color: #000000;
+  --text-color: #ffffff;
+}
 
-  .dark-theme {
-    // background-color: #000000; /* Dark background color */
-    background: transparent !important;
-    color: white; /* Text color */
-  }
+body {
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
 
-  .customize+* .mat-menu-panel {
-    background: rgb(0, 0, 0);
-    color: white;
-  }
+.dark-theme {
+  // background-color: #000000; /* Dark background color */
+  background: transparent !important;
+  color: white; /* Text color */
+}
 
+.customize + * .mat-menu-panel {
+  background: rgb(0, 0, 0);
+  color: white;
+}
 
-  body {
-    background-image: url('./assets/img/BACKGROUND.png'); /* Replace 'background-image.jpg' with your image file */
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    height: 100%;
-    margin: 0;
-    padding: 0;
+body {
+  background-image: url("./assets/img/BACKGROUND.png"); /* Replace 'background-image.jpg' with your image file */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
 
-  }
+.opacity {
+  background: rgba(0, 0, 0, 0.74);
+}
