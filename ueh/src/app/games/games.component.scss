@@ -16,7 +16,7 @@
 }
 
 .spacer {
-    height: 10rem;
+    height: 8rem;
 }
 
 .inner-container {
@@ -29,8 +29,13 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 20rem;
-    padding: 5rem;
+    width: 25rem;
+    padding: 2rem;
+}
+
+.header {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
 }
 
 a {
@@ -38,9 +43,30 @@ a {
 }
 img {
     width: 100%;
-    min-width: 20rem;
+    //min-width: 20rem;
     max-height: 100%;
     
 }
 
 
+@media (max-width: 768px) { 
+    .container {
+        width: 100%;
+        padding-bottom: 5rem;
+    }
+    .overwrap {
+        margin: 1rem;
+        width: 90vw;
+    }
+    .spacer {
+        display: none;
+    }
+
+    .item {
+        padding: 1rem;
+    }
+
+    img {
+        min-width: 0;
+    }
+}

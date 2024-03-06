@@ -16,11 +16,16 @@
 }
 
 .spacer {
-    height: 10rem;
+    height: 8rem;
 }
 
 .mini-spacer {
     height: 4rem;
+}
+
+.header {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
 }
 
 @media (max-width: 768px) { 

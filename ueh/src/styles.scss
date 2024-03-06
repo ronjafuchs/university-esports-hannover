@@ -33,6 +33,7 @@ body {
 body {
   background-color: var(--background-color);
   color: var(--text-color);
+  overflow-x: hidden;
 }
 
 .dark-theme {
@@ -88,8 +89,13 @@ p {
 
 button {
   a {
-      color: white;
-      text-decoration: none;
+    color: white;
+    text-decoration: none;
   }
 }
 
+@media (max-width: 768px) {
+  .opacity {
+    margin-top: -1rem;
+  }
+}
