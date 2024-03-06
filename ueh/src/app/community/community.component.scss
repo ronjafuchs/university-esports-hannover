@@ -4,29 +4,8 @@
     width: 70%;
 }
 
-.spacer {
-    height: 8rem;
-}
 
 .mini-spacer {
     height: 2rem;
-}
-
-.header {
-    margin-bottom: 3rem;
-}
-
-// MOBILE VIEW
-@media (max-width: 768px) { 
-    .container {
-        width: 100%;
-    }
-    .overwrap {
-        margin: 0 1rem 1rem 1rem;
-        width: 90vw;
-    }
-    .spacer {
-        display: none;
-    }
 }
 
