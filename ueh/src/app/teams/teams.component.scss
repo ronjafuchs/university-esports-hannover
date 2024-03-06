@@ -7,13 +7,7 @@
     flex-wrap: wrap;
 }
 
-.overwrap {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-    margin: 0 0 0 10rem;
-}
+
 
 .header h1, .header h2 {
     margin-bottom: 10px;
@@ -62,7 +56,6 @@
 }
 
 .header {
-    margin-top: 3rem;
     margin-bottom: 3rem;
 }
 

@@ -2,7 +2,7 @@
 @use "@angular/material" as mat;
 @import "@angular/material/prebuilt-themes/indigo-pink.css";
 
-$my-palette: mat.$indigo-palette;
+$ueh-palette: mat.$indigo-palette;
 @include mat.core();
 
 @font-face {
@@ -10,11 +10,14 @@ $my-palette: mat.$indigo-palette;
   src: url("./assets/fonts/Comfortaa/Comfortaa-VariableFont_wght.ttf");
 }
 
-$my-primary: mat.define-palette(mat.$indigo-palette, 500);
-$my-accent: mat.define-palette(mat.$pink-palette, A200, A100, A400);
+$ueh-primary: rgb(199, 9, 97);
+$ueh-hover: rgb(228, 64, 141);
+$ueh-accent: rgb(24, 115, 132);
+$ueh-opacity: rgba(0, 0, 0, 0.74);
+
 
 // The "warn" palette is optional and defaults to red if not specified.
-$my-warn: mat.define-palette(mat.$red-palette);
+$ueh-warn: mat.define-palette(mat.$red-palette);
 
 html,
 body {
@@ -37,9 +40,8 @@ body {
 }
 
 .dark-theme {
-  // background-color: #000000; /* Dark background color */
   background: transparent !important;
-  color: white; /* Text color */
+  color: white; 
 }
 
 .customize + * .mat-menu-panel {
@@ -48,7 +50,7 @@ body {
 }
 
 body {
-  background-image: url("./assets/img/BACKGROUND.png"); /* Replace 'background-image.jpg' with your image file */
+  background-image: url("./assets/img/BACKGROUND.png"); 
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -59,11 +61,27 @@ body {
 }
 
 .opacity {
-  background: rgba(0, 0, 0, 0.74);
+  background: $ueh-opacity;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap; 
+  justify-content: space-evenly;
+}
+
+
+.overwrap {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  margin: 0rem 0 4rem 10rem;
 }
 
 h1 {
-  color: rgb(201, 9, 94);
+  color: $ueh-primary;
   font-size: 40px;
   font-weight: bold;
 }
@@ -73,18 +91,18 @@ p {
 }
 
 .discord-button {
-  font-size: 20px; /* Adjust the font size as needed */
-  padding: 2rem 30px; /* Adjust the padding as needed */
-  border-radius: 0; /* Remove rounded corners */
-  background-color: rgb(201, 9, 94) !important; /* Background color */
-  color: white; /* Text color */
+  font-size: 20px;
+  padding: 2rem 30px;
+  border-radius: 0;
+  background-color: $ueh-primary !important;
+  color: white;
   max-width: 14rem;
   min-width: 12rem;
   max-height: 4rem;
 }
 
 .discord-button:hover {
-  background-color: rgb(221, 86, 147) !important; /* Hover background color */
+  background-color: $ueh-hover !important;
 }
 
 button {
@@ -94,27 +112,21 @@ button {
   }
 }
 
-@media (max-width: 768px) {
-  .opacity {
-    margin-top: -1rem;
-  }
-}
-
 // TABLET VIEW
 @media (max-width: 1100px) {
   .container {
-      width: 100%;
+    width: 100%;
   }
   .overwrap {
-      margin: 1rem;
-      width: 90vw;
+    margin: 0 1rem 1rem 1rem;
+    width: 90vw;
   }
   .spacer {
-      display: none;
+    display: none;
   }
 
   .column {
-      margin: 1rem;
-      padding: 1rem;
+    margin: 1rem;
+    padding: 1rem;
   }
 }

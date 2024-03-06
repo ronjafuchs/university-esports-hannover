@@ -1,18 +1,7 @@
 @import "./../../styles.scss";
 
-.container {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap; 
-}
-
 .overwrap {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    margin: 0rem 0 0rem 10rem;
-    padding-bottom: 8rem; 
-    width: 80%;
+    width: 70%;
 }
 
 .spacer {
@@ -24,27 +13,11 @@
 }
 
 .header {
-    margin-top: 3rem;
     margin-bottom: 3rem;
 }
 
 // MOBILE VIEW
 @media (max-width: 768px) { 
-    .container {
-        width: 100%;
-    }
-    .overwrap {
-        margin: 1rem;
-        width: 90vw;
-    }
-    .spacer {
-        display: none;
-    }
-}
-
-
-// TABLET VIEW
-@media (max-width: 1100px) {
     .container {
         width: 100%;
     }
@@ -55,8 +28,5 @@
     .spacer {
         display: none;
     }
+}
 
-    .column {
-        margin: 1rem;
-    }
- }
