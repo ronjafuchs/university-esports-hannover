@@ -22,3 +22,16 @@
 .mini-spacer {
     height: 4rem;
 }
+
+@media (max-width: 768px) { 
+    .container {
+        width: 100%;
+    }
+    .overwrap {
+        margin: 1rem;
+        width: 90vw;
+    }
+    .spacer {
+        display: none;
+    }
+}
