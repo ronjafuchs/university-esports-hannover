@@ -3,6 +3,16 @@
 .container {
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    flex-wrap: wrap; 
+}
+
+.overwrap {
+    display: flex;
+    flex-direction: column;
     flex-wrap: wrap;
+    margin: 0rem 0 4rem 10rem;
+}
+
+.spacer {
+    height: 10rem;
 }

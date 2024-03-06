@@ -2,7 +2,68 @@
 
 .container {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-evenly;
     flex-wrap: wrap;
+}
+
+.overwrap {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin: 0 0 0 10rem;
+}
+
+.header h1, .header h2 {
+    margin-bottom: 10px;
+}
+
+.game img {
+    width: 12rem;
+    margin-bottom: 5px;
+}
+
+.description p {
+    font-size: 14px;
+}
+
+.row {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 5rem;
+
+    .images {
+        display: flex;
+    }
+
+}
+
+.spacer {
+    height: 8rem;
+}
+
+.team {
+    width: 20rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+.game {
+    display: flex;
+    justify-content: center;
+}
+
+.header {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+
+.h2 {
+    font-size: 30px;
 }
