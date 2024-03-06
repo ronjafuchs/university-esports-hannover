@@ -10,9 +10,15 @@
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    margin: 0rem 0 4rem 10rem;
+    margin: 0rem 0 0rem 10rem;
+    padding-bottom: 8rem; 
+    width: 60%;
 }
 
 .spacer {
     height: 10rem;
+}
+
+.mini-spacer {
+    height: 4rem;
 }
