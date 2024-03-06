@@ -77,6 +77,9 @@ p {
   border-radius: 0; /* Remove rounded corners */
   background-color: rgb(201, 9, 94) !important; /* Background color */
   color: white; /* Text color */
+  max-width: 14rem;
+  min-width: 12rem;
+  max-height: 4rem;
 }
 
 .discord-button:hover {

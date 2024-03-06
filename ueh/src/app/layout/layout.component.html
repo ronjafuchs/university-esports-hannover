@@ -44,7 +44,6 @@
         <a class="big-font"mat-button routerLink="teams" routerLinkActive="active-link">Teams</a>
         <a class="big-font"mat-button routerLink="games" routerLinkActive="active-link">Games</a>
         <a class="big-font" mat-button routerLink="community" routerLinkActive="active-link">Community</a>
-        <a class="big-font" mat-button routerLink="impressum" routerLinkActive="active-link">Impressum</a>
     </mat-toolbar-row>
 </mat-toolbar>
 
@@ -57,17 +56,16 @@
 <footer class="footer opacity">
     <div class="column">
       <ul class="social-icons">
-        <li><a href="https://www.instagram.com/university_esports_hannover/?hl=en"><img src="../../assets/img/instagram.webp" alt="Instagram"></a></li>
-      <li><a href="https://www.facebook.com/luhesports/?locale=de_DE"><img src="../../assets/img/facebook.webp" alt="Twitter"></a></li>
-      <li><a href="https://twitter.com/UeHannover"><img src="../../assets/img/x.webp" alt="Instagram"></a></li>
+        <li><a class="icon" href="https://www.instagram.com/university_esports_hannover/?hl=en"><img src="../../assets/img/instagram.webp" alt="Instagram"></a></li>
+      <li><a class="icon" href="https://www.facebook.com/luhesports/?locale=de_DE"><img src="../../assets/img/facebook.webp" alt="Twitter"></a></li>
+      <li><a class="icon" href="https://twitter.com/UeHannover"><img src="../../assets/img/x.webp" alt="Instagram"></a></li>
     </ul>
     </div>
     <div class="column">
       <button mat-flat-button class="discord-button"><a href="https://discord.gg/7S6DgP8GgE" alt="Discord">Join our Discord</a></button>
     </div>
     <div class="column">
-      <h3>Contact Us</h3>
-      <p>Email: </p>
+        <a class="impressum" routerLink="impressum" data-content="Impressum">Impressum</a>
     </div>
   </footer>
   

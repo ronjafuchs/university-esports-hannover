@@ -79,12 +79,17 @@
     padding: 20px;
     display: flex;
     justify-content: space-between;
-    height: 10rem;
+    display: flex;
+    flex-wrap: wrap;
+
 }
 
 .column {
+    display: flex;
+    justify-content: center;
     flex: 1;
-    margin: 0 1rem 0 10rem;
+    margin: 0 1rem 3rem 1rem;
+    min-width:20rem;
     button {
         a {
             color: white;
@@ -101,7 +106,10 @@
 .social-icons {
     list-style: none;
     padding: 0;
-    margin: 0;
+}
+
+.icon {
+    margin: 1rem;
 }
 
 .social-icons {
@@ -117,6 +125,17 @@
         height: 60px;
     }
 }
+
+.impressum {
+    color: white;
+    text-decoration: none;
+}
+
+.impressum a:hover::after {
+    text-decoration: underline;
+    border-bottom: 1px solid;
+}
+
 
 
 
@@ -146,4 +165,5 @@
         background-color: black !important;
         color: white;
     }
+
 }
