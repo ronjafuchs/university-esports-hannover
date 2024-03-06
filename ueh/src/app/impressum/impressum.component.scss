@@ -1,0 +1,24 @@
+@import "./../../styles.scss";
+
+.container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap; 
+}
+
+.overwrap {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin: 0rem 0 0rem 10rem;
+    padding-bottom: 8rem; 
+    width: 60%;
+}
+
+.spacer {
+    height: 10rem;
+}
+
+.mini-spacer {
+    height: 4rem;
+}
