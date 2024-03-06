@@ -23,6 +23,7 @@
     width: 80%;
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
 }
 
 .item {
@@ -70,3 +71,22 @@ img {
         min-width: 0;
     }
 }
+
+// TABLET VIEW
+@media (max-width: 1100px) {
+    .container {
+        width: 100%;
+    }
+    .overwrap {
+        margin: 0 1rem 1rem 1rem;
+        width: 90vw;
+    }
+    .spacer {
+        display: none;
+    }
+
+    .column {
+        margin: 1rem;
+        padding: 1rem;
+    }
+ }
