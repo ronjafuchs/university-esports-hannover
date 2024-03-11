@@ -10,11 +10,15 @@ $ueh-palette: mat.$indigo-palette;
   src: url("./assets/fonts/Comfortaa/Comfortaa-VariableFont_wght.ttf");
 }
 
+@font-face {
+  font-family: "Barlow";
+  src: url("./assets/fonts/Barlow/Barlow-Black.ttf");
+}
+
 $ueh-primary: rgb(199, 9, 97);
 $ueh-hover: rgb(228, 64, 141);
 $ueh-accent: rgb(24, 115, 132);
 $ueh-opacity: rgba(0, 0, 0, 0.74);
-
 
 // The "warn" palette is optional and defaults to red if not specified.
 $ueh-warn: mat.define-palette(mat.$red-palette);
@@ -41,7 +45,7 @@ body {
 
 .dark-theme {
   background: transparent !important;
-  color: white; 
+  color: white;
 }
 
 .customize + * .mat-menu-panel {
@@ -50,7 +54,7 @@ body {
 }
 
 body {
-  background-image: url("./assets/img/BACKGROUND.png"); 
+  background-image: url("./assets/img/BACKGROUND.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -67,9 +71,8 @@ body {
 .container {
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap; 
+  flex-wrap: wrap;
 }
-
 
 .overwrap {
   display: flex;
@@ -82,12 +85,14 @@ body {
 .header {
   margin-top: 3rem;
   margin-bottom: 3rem;
+  width: 75%;
 }
 
 h1 {
   color: $ueh-primary;
   font-size: 40px;
   font-weight: bold;
+  font-family: Barlow, "Helvetica Neue", sans-serif;
 }
 
 p {
@@ -136,12 +141,14 @@ button {
   }
 }
 
-
-@media (max-width: 768px) { 
+@media (max-width: 768px) {
   .container {
-      padding-bottom: 5rem;
+    padding-bottom: 5rem;
   }
   .overwrap {
-      width: 90vw;
+    width: 90vw;
+  }
+  .header {
+    width: 100%;
   }
 }

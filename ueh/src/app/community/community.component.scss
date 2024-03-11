@@ -1,7 +1,7 @@
 @import "./../../styles.scss";
 
 .overwrap {
-    width: 70%;
+    width: 100%;
 }
 
 
@@ -9,3 +9,13 @@
     height: 2rem;
 }
 
+.header {
+    width: 75%;
+}
+
+
+@media (max-width: 768px) {     
+    .header {
+        width: 100%;
+    }
+}
