@@ -160,6 +160,16 @@
     border-bottom: 1px solid;
 }
 
+.clickable-area {
+    background: rgba(255, 255, 255, 0); /* Semi-transparent layer for visibility, optional */
+    position: absolute; 
+    top: 18rem; 
+    left: 15rem; 
+    width: 50rem; 
+    height: 10rem; 
+    cursor: pointer;
+  }
+
 
 
 // MOBILE VIEW
