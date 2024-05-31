@@ -13,15 +13,8 @@
     width: 75%;
 }
 
-
-@media (max-width: 768px) {     
-    .header {
-        width: 100%;
-    }
-}
-
 img { 
-    width: 40rem;
+    max-width: 40rem;
     margin-bottom: 5rem;
 }
 
@@ -31,3 +24,14 @@ img {
     align-items: center;
     width: 100%;
 }
+
+@media (max-width: 768px) {     
+    .header {
+        width: 100%;
+    }
+    
+    img { 
+        max-width: 25rem;
+    }
+}
+
