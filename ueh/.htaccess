@@ -1,0 +1,3 @@
+RewriteEngine On
+RewriteCond %{HTTP_HOST} !^www\.university-esports-hannover\.de [NC]
+RewriteRule ^(.*)$ http://www.university-esports-hannover.de/$1 [R=301,L]
