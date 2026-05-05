@@ -13,13 +13,12 @@ import { MatListModule } from '@angular/material/list';
 import { HomeComponent } from '../home/home.component';
 import { CommunityComponent } from '../community/community.component';
 @Component({
-  selector: 'app-layout',
-  standalone: true,
-  imports: [RouterOutlet, RouterModule, MatListModule, MatIconModule, 
-    MatSidenavModule, MatToolbarModule, MatButtonModule, 
-    MatMenuModule, HomeComponent, CommunityComponent],
-  templateUrl: './layout.component.html',
-  styleUrl: './layout.component.scss',
+    selector: 'app-layout',
+    imports: [RouterOutlet, RouterModule, MatListModule, MatIconModule,
+        MatSidenavModule, MatToolbarModule, MatButtonModule,
+        MatMenuModule, HomeComponent, CommunityComponent],
+    templateUrl: './layout.component.html',
+    styleUrl: './layout.component.scss'
 })
 export class LayoutComponent {
   @ViewChild('sidenav') sidenav!: MatSidenav;

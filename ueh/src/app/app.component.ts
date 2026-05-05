@@ -4,11 +4,10 @@ import { RouterModule } from '@angular/router';
 import { LayoutComponent } from './layout/layout.component';
 
 @Component({
-  selector: 'app-root',
-  standalone: true,
-  imports: [RouterOutlet, RouterModule, LayoutComponent],
-  templateUrl: './app.component.html',
-  styleUrl: './app.component.scss'
+    selector: 'app-root',
+    imports: [RouterOutlet, RouterModule, LayoutComponent],
+    templateUrl: './app.component.html',
+    styleUrl: './app.component.scss'
 })
 export class AppComponent {
   title = 'ueh';
