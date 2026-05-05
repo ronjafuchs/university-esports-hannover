@@ -16,9 +16,9 @@ $ueh-palette: mat.$m2-indigo-palette;
   src: url("./assets/fonts/Barlow/Barlow-Black.ttf");
 }
 
-$ueh-primary: rgb(199, 9, 97);
-$ueh-hover: rgb(228, 64, 141);
-$ueh-accent: rgb(24, 115, 132);
+$ueh-primary: rgb(44, 110, 179);
+$ueh-hover: rgb(56, 137, 223);
+$ueh-accent: rgb(173,41,118);
 $ueh-opacity: rgba(0, 0, 0, 0.74);
 
 // The "warn" palette is optional and defaults to red if not specified.
@@ -55,11 +55,11 @@ body {
 }
 
 body {
-  background-image: url("./assets/img/BACKGROUND.png");
+  background-image: url("./assets/img/background1.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  background-attachment: fixed;
+  // background-attachment: fixed;
   height: 100%;
   margin: 0;
   padding: 0;

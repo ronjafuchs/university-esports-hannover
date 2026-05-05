@@ -20,7 +20,55 @@
 
 .head {
     font-family: "Comfortaa", sans-serif;
-    background-color: black;
+    background-color: transparent;
+    display: flex; 
+    flex-direction: row;
+    height: 10rem;
+    img {
+        height: 100%;
+        width: auto;
+    }
+}
+
+.logo {
+    margin: 2rem 0 1rem 0;
+    cursor: pointer;
+}
+
+.upper-navbar {
+    display: flex;
+    width: 75%;
+    height: 100%;
+    justify-content: right;
+    align-items: center;
+    a {
+        font-size: 1.5rem;
+        text-transform: uppercase;
+    }
+}
+
+.nav-btn {
+    background: transparent;
+    font-size: 1rem !important;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: background 0.2s, color 0.2s;
+    font-family: inherit;
+    padding: 2rem 3rem;
+    margin-right: 2rem;
+}
+
+.active-link {
+    border: 2px solid white;
+    border-radius: 10rem;
+}
+
+.join-btn {
+    border: 2px solid $ueh-primary;
+    border-radius: 999px;
+    padding: 2rem 3rem;
 }
 
 .mat-toolbar-row a {
@@ -42,11 +90,6 @@
     text-decoration: none;
 }
 
-.logo {
-    max-width: 50px; /* Adjust this value as needed */
-    height: auto;
-}
-
 .banner {
     display: flex;
     justify-content: center;
@@ -57,23 +100,8 @@
     //height: 30rem;
 }
 
-.big-font {
-    font-size: 20px;
-    margin-right: 5rem !important;
-}
-
 .mobile {
     display: none;
-}
-
-.nav {
-    /* margin-bottom: -1rem; */
-}
-
-.active-link {
-    color: rgb(201, 9, 94) !important;
-    border-bottom: 2px solid;
-    border-radius: 0px;
 }
 
 // FOOTER
@@ -203,10 +231,6 @@
         font-family: "Comfortaa", sans-serif;
         background-color: black;
         font-size: 14px;
-    }
-
-    .logo {
-        margin-right: 1rem;
     }
 
     .banner {
