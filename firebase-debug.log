@@ -1,31 +1,105 @@
-[debug] [2026-05-05T12:02:57.055Z] ----------------------------------------------------------------------
-[debug] [2026-05-05T12:02:57.059Z] Command:       /Users/ronjafuchs/.nvm/versions/node/v22.22.2/bin/node /Users/ronjafuchs/.nvm/versions/node/v22.22.2/bin/firebase deploy
-[debug] [2026-05-05T12:02:57.059Z] CLI Version:   15.16.0
-[debug] [2026-05-05T12:02:57.059Z] Platform:      darwin
-[debug] [2026-05-05T12:02:57.060Z] Node Version:  v22.22.2
-[debug] [2026-05-05T12:02:57.060Z] Time:          Tue May 05 2026 14:02:57 GMT+0200 (Mitteleuropäische Sommerzeit)
-[debug] [2026-05-05T12:02:57.060Z] ----------------------------------------------------------------------
+[debug] [2026-05-06T12:31:43.283Z] ----------------------------------------------------------------------
+[debug] [2026-05-06T12:31:43.287Z] Command:       /Users/ronjafuchs/.nvm/versions/node/v22.22.2/bin/node /Users/ronjafuchs/.nvm/versions/node/v22.22.2/bin/firebase deploy --debug
+[debug] [2026-05-06T12:31:43.287Z] CLI Version:   15.16.0
+[debug] [2026-05-06T12:31:43.287Z] Platform:      darwin
+[debug] [2026-05-06T12:31:43.287Z] Node Version:  v22.22.2
+[debug] [2026-05-06T12:31:43.288Z] Time:          Wed May 06 2026 14:31:43 GMT+0200 (Mitteleuropäische Sommerzeit)
+[debug] [2026-05-06T12:31:43.288Z] ----------------------------------------------------------------------
 [debug] 
-[debug] [2026-05-05T12:02:58.619Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
-[debug] [2026-05-05T12:02:58.620Z] > authorizing via signed-in user (ocrispy62@gmail.com)
-[debug] [2026-05-05T12:02:58.620Z] [iam] checking project university-esports-hanno-9ee5e for permissions ["firebase.projects.get","firebasehosting.sites.update"]
-[debug] [2026-05-05T12:02:58.621Z] Checked if tokens are valid: true, expires at: 1777986150844
-[debug] [2026-05-05T12:02:58.621Z] Checked if tokens are valid: true, expires at: 1777986150844
-[debug] [2026-05-05T12:02:58.623Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/university-esports-hanno-9ee5e:testIamPermissions [none]
-[debug] [2026-05-05T12:02:58.623Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/university-esports-hanno-9ee5e:testIamPermissions  x-goog-user-project=university-esports-hanno-9ee5e
-[debug] [2026-05-05T12:02:58.623Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/university-esports-hanno-9ee5e:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
-[debug] [2026-05-05T12:02:59.755Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/university-esports-hanno-9ee5e:testIamPermissions 403
-[debug] [2026-05-05T12:02:59.756Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/university-esports-hanno-9ee5e:testIamPermissions {"error":{"code":403,"message":"Caller does not have required permission to use project university-esports-hanno-9ee5e. Grant the caller the roles/serviceusage.serviceUsageConsumer role, or a custom role with the serviceusage.services.use permission, by visiting https://console.developers.google.com/iam-admin/iam?project=university-esports-hanno-9ee5e and then retry. Propagation of the new permission may take a few minutes.","status":"PERMISSION_DENIED","details":[{"@type":"type.googleapis.com/google.rpc.ErrorInfo","reason":"USER_PROJECT_DENIED","domain":"googleapis.com","metadata":{"containerInfo":"university-esports-hanno-9ee5e","service":"cloudresourcemanager.googleapis.com","consoleUrl":"https://console.developers.google.com/iam-admin/iam?project=university-esports-hanno-9ee5e","consumer":"projects/university-esports-hanno-9ee5e"}},{"@type":"type.googleapis.com/google.rpc.LocalizedMessage","locale":"en-US","message":"Caller does not have required permission to use project university-esports-hanno-9ee5e. Grant the caller the roles/serviceusage.serviceUsageConsumer role, or a custom role with the serviceusage.services.use permission, by visiting https://console.developers.google.com/iam-admin/iam?project=university-esports-hanno-9ee5e and then retry. Propagation of the new permission may take a few minutes."},{"@type":"type.googleapis.com/google.rpc.Help","links":[{"description":"Google developer console IAM admin","url":"https://console.developers.google.com/iam-admin/iam?project=university-esports-hanno-9ee5e"}]}]}}
-[debug] [2026-05-05T12:02:59.757Z] [iam] error while checking permissions, command may fail: Request to https://cloudresourcemanager.googleapis.com/v1/projects/university-esports-hanno-9ee5e:testIamPermissions had HTTP Error: 403, Caller does not have required permission to use project university-esports-hanno-9ee5e. Grant the caller the roles/serviceusage.serviceUsageConsumer role, or a custom role with the serviceusage.services.use permission, by visiting https://console.developers.google.com/iam-admin/iam?project=university-esports-hanno-9ee5e and then retry. Propagation of the new permission may take a few minutes.
-[debug] [2026-05-05T12:02:59.758Z] Checked if tokens are valid: true, expires at: 1777986150844
-[debug] [2026-05-05T12:02:59.758Z] Checked if tokens are valid: true, expires at: 1777986150844
-[debug] [2026-05-05T12:02:59.758Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/university-esports-hanno-9ee5e [none]
-[debug] [2026-05-05T12:03:00.186Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/university-esports-hanno-9ee5e 403
-[debug] [2026-05-05T12:03:00.187Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/university-esports-hanno-9ee5e {"error":{"code":403,"message":"The caller does not have permission","status":"PERMISSION_DENIED"}}
-[debug] [2026-05-05T12:03:00.187Z] Request to https://firebase.googleapis.com/v1beta1/projects/university-esports-hanno-9ee5e had HTTP Error: 403, The caller does not have permission
-[debug] [2026-05-05T12:03:00.287Z] FirebaseError: Request to https://firebase.googleapis.com/v1beta1/projects/university-esports-hanno-9ee5e had HTTP Error: 403, The caller does not have permission
-    at responseToError (/Users/ronjafuchs/.nvm/versions/node/v22.22.2/lib/node_modules/firebase-tools/lib/responseToError.js:53:12)
-    at RetryOperation._fn (/Users/ronjafuchs/.nvm/versions/node/v22.22.2/lib/node_modules/firebase-tools/lib/apiv2.js:333:77)
-    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
-[error] 
-[error] Error: Failed to get Firebase project university-esports-hanno-9ee5e. Please make sure the project exists and your account has permission to access it.
+[debug] [2026-05-06T12:31:45.932Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2026-05-06T12:31:45.933Z] > authorizing via signed-in user (ocrispy62@gmail.com)
+[debug] [2026-05-06T12:31:45.933Z] [iam] checking project university-esports-hannover for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2026-05-06T12:31:45.935Z] Checked if tokens are valid: true, expires at: 1778071781703
+[debug] [2026-05-06T12:31:45.935Z] Checked if tokens are valid: true, expires at: 1778071781703
+[debug] [2026-05-06T12:31:45.936Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/university-esports-hannover:testIamPermissions [none]
+[debug] [2026-05-06T12:31:45.937Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/university-esports-hannover:testIamPermissions  x-goog-user-project=university-esports-hannover
+[debug] [2026-05-06T12:31:45.937Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/university-esports-hannover:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2026-05-06T12:31:46.208Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/university-esports-hannover:testIamPermissions 200
+[debug] [2026-05-06T12:31:46.209Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/university-esports-hannover:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2026-05-06T12:31:46.209Z] Checked if tokens are valid: true, expires at: 1778071781703
+[debug] [2026-05-06T12:31:46.210Z] Checked if tokens are valid: true, expires at: 1778071781703
+[debug] [2026-05-06T12:31:46.210Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/university-esports-hannover [none]
+[debug] [2026-05-06T12:31:46.576Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/university-esports-hannover 200
+[debug] [2026-05-06T12:31:46.576Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/university-esports-hannover {"projectId":"university-esports-hannover","projectNumber":"185158915329","displayName":"university-esports-hannover","name":"projects/university-esports-hannover","resources":{"hostingSite":"university-esports-hannover"},"state":"ACTIVE","etag":"1_b0e58bfc-9ad1-47f6-a3c0-114ae559d287"}
+[info] 
+[info] === Deploying to 'university-esports-hannover'...
+[info] 
+[info] i  deploying hosting 
+[debug] [2026-05-06T12:31:46.581Z] Checked if tokens are valid: true, expires at: 1778071781703
+[debug] [2026-05-06T12:31:46.581Z] Checked if tokens are valid: true, expires at: 1778071781703
+[debug] [2026-05-06T12:31:46.581Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/university-esports-hannover/sites/university-esports-hannover [none]
+[debug] [2026-05-06T12:31:47.692Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/university-esports-hannover/sites/university-esports-hannover 200
+[debug] [2026-05-06T12:31:47.692Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/university-esports-hannover/sites/university-esports-hannover {"name":"projects/university-esports-hannover/sites/university-esports-hannover","defaultUrl":"https://university-esports-hannover.web.app","appId":"1:185158915329:web:e10bf225b31bbe92e57700","type":"DEFAULT_SITE"}
+[debug] [2026-05-06T12:31:47.698Z] Checked if tokens are valid: true, expires at: 1778071781703
+[debug] [2026-05-06T12:31:47.700Z] Checked if tokens are valid: true, expires at: 1778071781703
+[debug] [2026-05-06T12:31:47.701Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/university-esports-hannover/versions [none]
+[debug] [2026-05-06T12:31:47.701Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/university-esports-hannover/versions {"status":"CREATED","labels":{"deployment-tool":"cli-firebase"}}
+[debug] [2026-05-06T12:31:49.679Z] <<< [apiv2][status] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/university-esports-hannover/versions 200
+[debug] [2026-05-06T12:31:49.679Z] <<< [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/university-esports-hannover/versions {"name":"projects/185158915329/sites/university-esports-hannover/versions/abefc31756673daa","status":"CREATED","config":{},"labels":{"deployment-tool":"cli-firebase"}}
+[info] i  hosting[university-esports-hannover]: beginning deploy... 
+[info] i  hosting[university-esports-hannover]: found 57 files in dist/ueh/browser 
+[debug] [2026-05-06T12:31:49.727Z] [hosting] uploading with 200 concurrency
+[debug] [2026-05-06T12:31:49.737Z] Checked if tokens are valid: true, expires at: 1778071781703
+[debug] [2026-05-06T12:31:49.738Z] Checked if tokens are valid: true, expires at: 1778071781703
+[debug] [2026-05-06T12:31:49.739Z] [hosting] hash cache [ZGlzdC91ZWgvYnJvd3Nlcg] stored for 57 files
+[debug] [2026-05-06T12:31:49.740Z] [hosting][hash queue][FINAL] {"max":7,"min":0,"avg":0.8705601786139135,"active":0,"complete":57,"success":57,"errored":0,"retried":0,"total":57,"elapsed":12}
+[debug] [2026-05-06T12:31:49.741Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/projects/185158915329/sites/university-esports-hannover/versions/abefc31756673daa:populateFiles [none]
+[debug] [2026-05-06T12:31:49.741Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/185158915329/sites/university-esports-hannover/versions/abefc31756673daa:populateFiles {"files":{"/styles-QDYSQUUB.css":"b5fe5156ba5b05e361164b69842ffbf07b3e065d9a6918c7236be17120817d7e","/polyfills-5CFQRCPP.js":"02fae82bf075da43b23af9fc7cf0bf387843c13dfdc835f78df7bd29c1d072ba","/main-KK67V37U.js":"8415191cccfdd2a9d0a3b286ed5ba4e246f70c18389314e6c072930c866e1375","/index.html":"f51b7e78d935c4123965cf991aa9435bc26a2c0e5847881be6575861394dba1b","/chunk-XM3X4TE2.js":"270a77d0ad39d4462489bf67e8dd1c1fbaf203048e2a2513cf6c5629eba38757","/chunk-SLTHPIRJ.js":"466b53b1ca93a9018eff4393043dabb4b01cd126719570658b9b9d7e7bedc3fb","/media/Comfortaa-VariableFont_wght-C5EARC67.ttf":"9aa48a375b06d2058fb77b52809000f16948cdda29f0f51a4fbc95f2a02f37fd","/media/Barlow-Black-UE7YRD5A.ttf":"e708a5d09105e34d7c7a863c4c9fb84f438f6375a770dd857de14d7a548b0755","/media/BACKGROUND-OLRBZAFJ.png":"ae914068ae833a240c9fe91030cccfd48826d38b7df1e6300b9cb740bd517be1","/assets/favicon.png":"0e5b22163ff6c878f7408486ab1bc5589d58f89c617ef9cfaa73adc0046e9143","/assets/img/x.webp":"980e77062f4c7f1986ac096b7274ad6af258548fad3a2bf7bd2111dc207e0d37","/assets/img/ueh_logo_white.png":"426e8a41d768126e6b1862869c670c7ba6b4c077de4cc8d5f08a4c4e8363f98d","/assets/img/ueh_logo_pride.png":"0e5b22163ff6c878f7408486ab1bc5589d58f89c617ef9cfaa73adc0046e9143","/assets/img/ueh_banner.png":"bf8e9b1e450cd834ddd8818cfd614bc783872dddb928774407127be39af6a420","/assets/img/twitch.svg":"27401efd35671d7ce22499d784979c39477e7301bced38bde10cc4801a249802","/assets/img/instagram.webp":"cb5dad7b8548e37131749ef44823f6efe5de62894c68db8749c9090a7d903e7c","/assets/img/facebook.webp":"2a27a275e8399737079ba90fbb46c626fca5ada49e8e87a4e86f3c44cde35405","/assets/img/LogoUEH.png":"7de8d7e50e041a63808d88f06bf16c1564922ea4447f9ac061dee70e66121ab3","/assets/img/BACKGROUND.png":"ae914068ae833a240c9fe91030cccfd48826d38b7df1e6300b9cb740bd517be1","/assets/img/team_logos/ueh_washed.png":"bd325ef50ebb9153c48347a1b265ae1cb1e9c03262806544c73e01c5b9528644","/assets/img/team_logos/simp_logo.png":"c2012c378b81d8a2f497d70e0fd8801f646f26453fe8aca960ca3e18a02eed97","/assets/img/team_logos/heralds_logo.png":"f38b648b843bb62b7b6ab9a4bfcaee109db3e195d11e136e074710a1c3076589","/assets/img/team_logos/def_dadys.png":"97657db568fd398a1a398daeb9c8d2b3a8902e24bea59a2203918ee4c1454154","/assets/img/team_logos/Maschsee_Mantas_logo.png":"ed663cfbe19464f2a8002ae0f0156177099e9a1ad921447a0f765ca43e4af9c5","/assets/img/team_logos/LLHLogoneu.png":"11ff4b0eb2c8e78da75d4f01f53fd25c48a5ccaad006bfb8b87a1737558d8ab3","/assets/img/team_logos/Hl Logo negativ.PNG":"f40346b749d5b269fe925ea151c8a3c82b71c781a39b35ad9be00f8e95526349","/assets/img/game_logos/valo.png":"2c16cce79b3066cc8e4e3b88dd5c48aaa67476802286a59d2712da43f2e2bcfd","/assets/img/game_logos/rl.svg":"58f4f72a568a50711fd93fdfec31cb226d5213e76029f1b0f0b76069231d0b11","/assets/img/game_logos/r6.png":"2978a46f365b40ee3c3e786e336bf119c6817dd6ce4ee14adefe0bb805fda328","/assets/img/game_logos/lol.png":"dec53286416aa5914e97c81dae20b6d82b7aab646f909f58c4409f3e10d367a5","/assets/img/game_logos/cs2.png":"3085aa318f0f4d2d0585cd7a10bd02086667a478375b1a730562ceff0913a466","/assets/fonts/Comfortaa/README.txt":"5a523b9f543cba58ad314791c49f7b0b8a7ff7926e8d2a7a6545141cf19246d6","/assets/fonts/Comfortaa/OFL.txt":"1ee105ceee0d89adc6b39931feceab5312f53739cf27aa3f3d057fdd6b32c227","/assets/fonts/Comfortaa/Comfortaa-VariableFont_wght.ttf":"9aa48a375b06d2058fb77b52809000f16948cdda29f0f51a4fbc95f2a02f37fd","/assets/fonts/Comfortaa/static/Comfortaa-SemiBold.ttf":"1550049d695c9d643088b90878408d2704d62de32e41eab5a988a62f2c9b2e1a","/assets/fonts/Comfortaa/static/Comfortaa-Regular.ttf":"0fec7548c367a758ff27693c54b4923914e3b79788a0b517b64a8705413ff7d2","/assets/fonts/Comfortaa/static/Comfortaa-Medium.ttf":"520c149881512e4250c68f45f9d26e0fb407f7fd0898d78520e56a1b87156063","/assets/fonts/Comfortaa/static/Comfortaa-Light.ttf":"b2610c338a7d44e6786fcb2724dd67f8b1fee722252dc5c26afc248cbeea1846","/assets/fonts/Comfortaa/static/Comfortaa-Bold.ttf":"6b457d22289c34b2838ec45acdee0e5a6db9a6859085e13232ffd50f19a85174","/assets/fonts/Barlow/Barlow-Black.ttf":"e708a5d09105e34d7c7a863c4c9fb84f438f6375a770dd857de14d7a548b0755","/assets/fonts/Barlow/static/Barlow-ThinItalic.ttf":"c1ebfa07d164a76d913cf35cfac512aa7fd07d168c304725a39872265df7831a","/assets/fonts/Barlow/static/Barlow-Thin.ttf":"08dc1cb7533120f6dff8ad0a6583ab723ff1b25c2d769cf2cb6f09ac82f317f7","/assets/fonts/Barlow/static/Barlow-SemiBoldItalic.ttf":"abbb2a88c0a5f34322bcf172533b77d8bf7bbcd73ad43610dc5e9d4218028f35","/assets/fonts/Barlow/static/Barlow-SemiBold.ttf":"bffbaf41b2f2c4d80430948dc5246cbb5dac8e5bbc13404d3c62bf102dd3b8dc","/assets/fonts/Barlow/static/Barlow-Regular.ttf":"2adc1327b8a5e4cb9bd0c374060bc2fe90bc162bbd75bcb898619ab675ad5b6e","/assets/fonts/Barlow/static/Barlow-MediumItalic.ttf":"4b8b8ab18abbb9e84301c5df519908be4a0f5160b0a5bac6ed87fbff366a42dc","/assets/fonts/Barlow/static/Barlow-Medium.ttf":"d026d0c6ece175f559c1b0044c566891cee3355791e1c5237394a9c8b2af18af","/assets/fonts/Barlow/static/Barlow-LightItalic.ttf":"c4147ddd9c3d53bdf94225618a38d412e5fe7f82bbbe51421d97b322e99ded3c","/assets/fonts/Barlow/static/Barlow-Light.ttf":"3df730455e5873f7c82114c1a66fddb99c9d5967a8a8d4b8009aea81f444fdbb","/assets/fonts/Barlow/static/Barlow-Italic.ttf":"f66a2838011e06b22bd8af09f71b879110b72908424cb6883c0e297b7158a49e","/assets/fonts/Barlow/static/Barlow-ExtraLightItalic.ttf":"58764083a6366878b7eb005fd1f6bd3175291765cabb463b9c55e79bd0fb5fb0","/assets/fonts/Barlow/static/Barlow-ExtraLight.ttf":"fa38b5dfeac28284778e254e73af3a2cfa1a29fdcb59cf8950a66d704636447c","/assets/fonts/Barlow/static/Barlow-ExtraBoldItalic.ttf":"ff84f70f685e139f82215e606dc79cf3f1defad22e6dc81cf242b1e299cfc78a","/assets/fonts/Barlow/static/Barlow-ExtraBold.ttf":"fc99dcf57f154d3e5fb450fef440dc0cd6402894582779168ad0c31ef0ce3720","/assets/fonts/Barlow/static/Barlow-BoldItalic.ttf":"f96ce4b85c1d330fe8d6ed6debefb841eb81f249ea048a5369bd200775e349aa","/assets/fonts/Barlow/static/Barlow-Bold.ttf":"2975c9cef5edead44e96534e1db5d3603c92d604a44a448f442213eba7638da3","/assets/fonts/Barlow/static/Barlow-BlackItalic.ttf":"d642b385dae3341d9c73382f26abbc42b913603477f4f40e6eed7e4aebcd683c"}}
+[debug] [2026-05-06T12:31:50.671Z] <<< [apiv2][status] POST https://firebasehosting.googleapis.com/v1beta1/projects/185158915329/sites/university-esports-hannover/versions/abefc31756673daa:populateFiles 200
+[debug] [2026-05-06T12:31:50.671Z] <<< [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/185158915329/sites/university-esports-hannover/versions/abefc31756673daa:populateFiles {"uploadUrl":"https://upload-firebasehosting.googleapis.com/upload/sites/university-esports-hannover/versions/abefc31756673daa/files"}
+[debug] [2026-05-06T12:31:50.671Z] [hosting][populate queue][FINAL] {"max":934,"min":934,"avg":934,"active":0,"complete":1,"success":1,"errored":0,"retried":0,"total":1,"elapsed":934}
+[debug] [2026-05-06T12:31:50.671Z] [hosting] uploads queued: 0
+[debug] [2026-05-06T12:31:50.671Z] [hosting][upload queue][FINAL] {"max":0,"min":9999999999,"avg":0,"active":0,"complete":0,"success":0,"errored":0,"retried":0,"total":0,"elapsed":1778070710671}
+[info] i  hosting: upload complete 
+[info] ✔  hosting[university-esports-hannover]: file upload complete 
+[debug] [2026-05-06T12:31:50.673Z] [hosting] deploy completed after 990ms
+[debug] [2026-05-06T12:31:50.674Z] [
+  {
+    "config": {
+      "public": "dist/ueh/browser",
+      "ignore": [
+        "firebase.json",
+        "**/.*",
+        "**/node_modules/**"
+      ],
+      "rewrites": [
+        {
+          "source": "**",
+          "destination": "/index.html"
+        }
+      ],
+      "redirects": [
+        {
+          "source": "/",
+          "destination": "https://university-esports-hannover.de",
+          "type": 301
+        }
+      ],
+      "site": "university-esports-hannover"
+    },
+    "version": "projects/185158915329/sites/university-esports-hannover/versions/abefc31756673daa"
+  }
+]
+[info] i  hosting[university-esports-hannover]: finalizing version... 
+[debug] [2026-05-06T12:31:50.677Z] Checked if tokens are valid: true, expires at: 1778071781703
+[debug] [2026-05-06T12:31:50.678Z] Checked if tokens are valid: true, expires at: 1778071781703
+[debug] [2026-05-06T12:31:50.678Z] >>> [apiv2][query] PATCH https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/university-esports-hannover/versions/abefc31756673daa updateMask=status%2Cconfig
+[debug] [2026-05-06T12:31:50.678Z] >>> [apiv2][body] PATCH https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/university-esports-hannover/versions/abefc31756673daa {"status":"FINALIZED","config":{"rewrites":[{"glob":"**","path":"/index.html"}],"redirects":[{"glob":"/","location":"https://university-esports-hannover.de","statusCode":301}]}}
+[debug] [2026-05-06T12:31:52.107Z] <<< [apiv2][status] PATCH https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/university-esports-hannover/versions/abefc31756673daa 200
+[debug] [2026-05-06T12:31:52.107Z] <<< [apiv2][body] PATCH https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/university-esports-hannover/versions/abefc31756673daa {"name":"projects/185158915329/sites/university-esports-hannover/versions/abefc31756673daa","status":"FINALIZED","config":{"redirects":[{"statusCode":301,"location":"https://university-esports-hannover.de","glob":"/"}],"rewrites":[{"glob":"**","path":"/index.html"}]},"labels":{"deployment-tool":"cli-firebase"},"createTime":"2026-05-06T12:31:48.291593Z","createUser":{"email":"ocrispy62@gmail.com"},"finalizeTime":"2026-05-06T12:31:51.847774Z","finalizeUser":{"email":"ocrispy62@gmail.com"}}
+[debug] [2026-05-06T12:31:52.107Z] [hosting] finalized version for university-esports-hannover:[object Object]
+[info] ✔  hosting[university-esports-hannover]: version finalized 
+[info] i  hosting[university-esports-hannover]: releasing new version... 
+[debug] [2026-05-06T12:31:52.108Z] Checked if tokens are valid: true, expires at: 1778071781703
+[debug] [2026-05-06T12:31:52.108Z] Checked if tokens are valid: true, expires at: 1778071781703
+[debug] [2026-05-06T12:31:52.108Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/university-esports-hannover/channels/live/releases versionName=projects%2F185158915329%2Fsites%2Funiversity-esports-hannover%2Fversions%2Fabefc31756673daa
+[debug] [2026-05-06T12:31:52.108Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/university-esports-hannover/channels/live/releases {}
+[debug] [2026-05-06T12:31:54.494Z] <<< [apiv2][status] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/university-esports-hannover/channels/live/releases 200
+[debug] [2026-05-06T12:31:54.495Z] <<< [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/university-esports-hannover/channels/live/releases {"name":"projects/185158915329/sites/university-esports-hannover/channels/live/releases/1778070713354000","version":{"name":"projects/185158915329/sites/university-esports-hannover/versions/abefc31756673daa","status":"FINALIZED","config":{"redirects":[{"statusCode":301,"location":"https://university-esports-hannover.de","glob":"/"}],"rewrites":[{"glob":"**","path":"/index.html"}]},"labels":{"deployment-tool":"cli-firebase"},"createTime":"2026-05-06T12:31:48.291593Z","createUser":{"email":"ocrispy62@gmail.com","imageUrl":"https://lh3.googleusercontent.com/a/ACg8ocK17PIAwt3nKPZVykRjnSuaWftrvbu6WN2Mva__Bi_6Wu_olQ=mo"},"finalizeTime":"2026-05-06T12:31:51.847774Z","finalizeUser":{"email":"ocrispy62@gmail.com","imageUrl":"https://lh3.googleusercontent.com/a/ACg8ocK17PIAwt3nKPZVykRjnSuaWftrvbu6WN2Mva__Bi_6Wu_olQ=mo"}},"type":"DEPLOY","releaseTime":"2026-05-06T12:31:53.354Z","releaseUser":{"email":"ocrispy62@gmail.com","imageUrl":"https://lh3.googleusercontent.com/a/ACg8ocK17PIAwt3nKPZVykRjnSuaWftrvbu6WN2Mva__Bi_6Wu_olQ=mo"}}
+[debug] [2026-05-06T12:31:54.495Z] [hosting] release: {"name":"projects/185158915329/sites/university-esports-hannover/channels/live/releases/1778070713354000","version":{"name":"projects/185158915329/sites/university-esports-hannover/versions/abefc31756673daa","status":"FINALIZED","config":{"redirects":[{"statusCode":301,"location":"https://university-esports-hannover.de","glob":"/"}],"rewrites":[{"glob":"**","path":"/index.html"}]},"labels":{"deployment-tool":"cli-firebase"},"createTime":"2026-05-06T12:31:48.291593Z","createUser":{"email":"ocrispy62@gmail.com","imageUrl":"https://lh3.googleusercontent.com/a/ACg8ocK17PIAwt3nKPZVykRjnSuaWftrvbu6WN2Mva__Bi_6Wu_olQ=mo"},"finalizeTime":"2026-05-06T12:31:51.847774Z","finalizeUser":{"email":"ocrispy62@gmail.com","imageUrl":"https://lh3.googleusercontent.com/a/ACg8ocK17PIAwt3nKPZVykRjnSuaWftrvbu6WN2Mva__Bi_6Wu_olQ=mo"}},"type":"DEPLOY","releaseTime":"2026-05-06T12:31:53.354Z","releaseUser":{"email":"ocrispy62@gmail.com","imageUrl":"https://lh3.googleusercontent.com/a/ACg8ocK17PIAwt3nKPZVykRjnSuaWftrvbu6WN2Mva__Bi_6Wu_olQ=mo"}}
+[info] ✔  hosting[university-esports-hannover]: release complete 
+[info] 
+[info] ✔  Deploy complete! 
+[info] 
+[info] Project Console: https://console.firebase.google.com/project/university-esports-hannover/overview
+[info] Hosting URL: https://university-esports-hannover.web.app
