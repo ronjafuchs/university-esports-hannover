@@ -34,16 +34,31 @@
     // glow effect for border 
     box-shadow: 0 0 20px $ueh-primary;
     width: 15rem;
-    height: 20rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    height: 20rem; 
+    overflow: clip !important;
 
     // glow effect on hover 
     &:hover {
         box-shadow: 0px 0 30px $ueh-hover;
     }
 
+    .game-upper {
+        z-index: 1;
+        overflow: clip;
+    }
+
+    .game-logo {
+        width: 90%;
+        // margin-bottom: 1rem;
+        padding: 0 1rem 0 1rem;
+        //overflow: overlay;
+        z-index: 2;
+    }
+
+}
+
+.game-card:last-child, .game-card:hover {
+    overflow: visible;
 }
 
 a {
