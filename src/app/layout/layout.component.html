@@ -6,9 +6,9 @@
         <img class="logo" routerLink="home" src="./../../assets/img/ueh_logo_white.png">
         <div class="upper-navbar">
             <!-- <a class="big-font" mat-button routerLink="home" routerLinkActive="active-link">Home</a> -->
-            <a class="nav-btn" mat-button routerLink="teams" routerLinkActive="active-link">Teams</a>
-            <a class="nav-btn" mat-button routerLink="games" routerLinkActive="active-link">Games</a>
-            <a class="nav-btn" mat-button routerLink="community" routerLinkActive="active-link">Community</a>
+            <a class="nav-btn" mat-button routerLink="." fragment="games" routerLinkActive="active-link">Games</a>
+            <a class="nav-btn" mat-button routerLink="." fragment="teams" routerLinkActive="active-link">Teams</a>
+            <a class="nav-btn" mat-button routerLink="." fragment="community" routerLinkActive="active-link">Community</a>
             <a class="nav-btn join-btn" mat-button href="https://discord.gg/7S6DgP8GgE" alt="Discord">Join us!</a>
             <mat-icon class="icon">language</mat-icon>
         </div>
@@ -22,8 +22,8 @@
             <p class="banner-subtitle">Esports for all Students in Hannover.</p>
             <!-- <a class="clickable-area" href="https://discord.gg/7S6DgP8GgE"></a> -->
         </div>
-        <div class="banner-pictures collage">
-            <img class="banner-pic" src="./../../assets/img/background1.png" alt="Banner Image">
+        <div class="banner-pictures collage card-stack">
+            <img class="banner-pic" src="./../../assets/img/background2.png" alt="Banner Image">
             <img class="banner-pic" src="./../../assets/img/background2.png" alt="Banner Image">
             <img class="banner-pic" src="./../../assets/img/background2.png" alt="Banner Image">
         </div>
@@ -46,7 +46,7 @@
         </div>
     </mat-sidenav-content>
 </mat-sidenav-container> -->
-
+    <div class="spacer"></div>
 </div>
 <mat-menu #menu="matMenu" class="mobile" backdropClass="customize">
     <button mat-menu-item routerLink="home">Home</button>
@@ -56,13 +56,18 @@
 </mat-menu>
 
 
-<div class="bg-section">
 
-    <div class="content opacity">
-        <router-outlet></router-outlet>
+<div class="content opacity">
+    <app-games></app-games>
+    <div class="bg-section sec2">
+        <app-teams></app-teams>
     </div>
-
+    <app-community></app-community>
+    <div class="bg-section">
+        <app-home></app-home>
+    </div>
 </div>
+
 <div class="bg-section">
 
     <footer class="footer opacity">

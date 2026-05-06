@@ -139,26 +139,37 @@ mat-toolbar {
     position: absolute;
     border: 3px solid white;
     border-radius: 8px;
+    transform-origin: bottom right; // fan pivots from bottom
+    transition: transform 0.3s ease
   }
-  
+
   .collage img:nth-child(1) {
     top: 0;
-    rotate: -10deg;
+    left: 8rem;
+    transform: rotate(-20deg); 
     z-index: 1;
+    transform-origin: bottom right; // fan pivots from bottom
+    transition: transform 0.3s ease
   }
   
   .collage img:nth-child(2) {
     top: 20px;
     left: 20rem;
-    rotate: 7deg;
+    transform: rotate(-2deg);
     z-index: 2;
   }
   
   .collage img:nth-child(3) {
     top: 40px;
-    left: 35rem;
-    rotate: -5deg;
+    left: 25rem;
+    transform: rotate(20deg);
     z-index: 3;
+  }
+
+  .card-stack:hover {
+    .card:nth-child(1) { transform: rotate(40deg) translateY(30px); }
+    .card:nth-child(2) { transform: rotate(7deg)  translateY(15px); }
+    .card:nth-child(3) { transform: rotate(0deg); }
   }
 
 

@@ -3,9 +3,10 @@ import { RouterOutlet } from '@angular/router';
 import { RouterModule } from '@angular/router';
 import { LayoutComponent } from './layout/layout.component';
 
+
 @Component({
     selector: 'app-root',
-    imports: [RouterOutlet, RouterModule, LayoutComponent],
+    imports: [RouterModule, LayoutComponent],
     templateUrl: './app.component.html',
     styleUrl: './app.component.scss'
 })

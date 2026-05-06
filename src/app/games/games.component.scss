@@ -26,6 +26,25 @@
     padding: 2rem;
 }
 
+.game-card {
+    border-radius: 3rem;
+    border-color: $ueh-primary;
+    border-style: solid;
+    border-width: 5px;
+    // glow effect for border 
+    box-shadow: 0 0 20px $ueh-primary;
+    width: 15rem;
+    height: 20rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    // glow effect on hover 
+    &:hover {
+        box-shadow: 0px 0 30px $ueh-hover;
+    }
+
+}
 
 a {
     width: 100%;
