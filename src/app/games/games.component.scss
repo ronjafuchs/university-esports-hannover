@@ -33,8 +33,8 @@
     border-width: 5px;
     // glow effect for border 
     box-shadow: 0 0 20px $ueh-primary;
-    width: 15rem;
-    height: 20rem; 
+    width: 20rem;
+    height: 30rem;
     overflow: clip !important;
 
     // glow effect on hover 
@@ -43,8 +43,25 @@
     }
 
     .game-upper {
-        z-index: 1;
-        overflow: clip;
+        // z-index: 1;
+        // overflow: clip;
+
+        position: relative; // already set, just make sure
+
+        // Gradient overlay sits on top of the image
+        &::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 60%; // how far up the fade reaches
+            background: linear-gradient(to bottom,
+                    transparent,
+                    black);
+            pointer-events: none; // so the image stays clickable
+        }
+
     }
 
     .game-logo {
@@ -57,7 +74,8 @@
 
 }
 
-.game-card:last-child, .game-card:hover {
+.game-card:last-child,
+.game-card:hover {
     overflow: visible;
 }
 
@@ -68,7 +86,7 @@ a {
 img {
     width: 100%;
     max-height: 100%;
-    
+
 }
 
 .overwrap {
@@ -76,7 +94,7 @@ img {
 }
 
 
-@media (max-width: 768px) { 
+@media (max-width: 768px) {
 
     .item {
         padding: 1rem;
