@@ -36,17 +36,21 @@
     width: 20rem;
     height: 30rem;
     overflow: clip !important;
-
+    margin: 1rem;
     // glow effect on hover 
     &:hover {
         box-shadow: 0px 0 30px $ueh-hover;
     }
 
-    .game-upper {
-        // z-index: 1;
-        // overflow: clip;
-
+    .game-banner {
         position: relative; // already set, just make sure
+
+        img {
+            display: block; // ← removes phantom bottom space
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
 
         // Gradient overlay sits on top of the image
         &::after {
@@ -55,11 +59,8 @@
             bottom: 0;
             left: 0;
             right: 0;
-            height: 60%; // how far up the fade reaches
-            background: linear-gradient(to bottom,
-                    transparent,
-                    black);
-            pointer-events: none; // so the image stays clickable
+            height: 300px;
+            background: linear-gradient(to bottom, transparent 50%, black 100%);
         }
 
     }
@@ -70,6 +71,10 @@
         padding: 0 1rem 0 1rem;
         //overflow: overlay;
         z-index: 2;
+        position: absolute;
+        width: 18rem;
+        height: auto;
+        margin-top: -5rem;
     }
 
 }

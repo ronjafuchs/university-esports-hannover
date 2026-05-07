@@ -117,8 +117,12 @@ body {
   z-index: 2;
 }
 
-.sec2 {
-  
+.sec2::after {
+  background: linear-gradient(to top,
+  transparent 0%,
+  transparent 80%,
+  black 100%
+) !important;
 }
 
 
